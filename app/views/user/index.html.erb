@@ -1,0 +1,12 @@
+<h1>All Users</h1>
+
+<% User.all.each do |user|%>
+	<b>Name:</b> <%= user.fname %> <%= user.lname %>
+	<br>
+	<b>Email:</b> <%= user.email %>
+	<br>
+	<br>
+<% end %>
+
+<br>
+<%= link_to "All Articles", articles_path %>

@@ -1,7 +1,7 @@
 <h1>All Users</h1>
 
 <% User.all.each do |user|%>
-	<b>Name:</b> <%= user.fname %> <%= user.lname %>
+	<b>Name:</b> <%=link_to "#{user.fname} #{user.lname}", profile_path(user.id)%>
 	<br>
 	<b>Email:</b> <%= user.email %>
 	<br>

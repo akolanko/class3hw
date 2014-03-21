@@ -9,6 +9,8 @@
 	<br>
 <% end %>
 
+<%= link_to "#{@current_user.fname}'s Profile", profile_path(@current_user.id)%>
+<br>
 <%= link_to "All Users", user_path %>
 <br>
 <%= link_to "All Articles", articles_path %>
